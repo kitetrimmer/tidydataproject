@@ -15,7 +15,7 @@ To run the script:
 
 1. Load the script into R studio
 2. Source the script
-3  Call run_analysis, using the directory containing the data as the dir arguement
+3.  Call run_analysis, using the directory containing the data as the dir arguement
 4. Results will be in the directory passed as the arguement
  
 ## Manifest
