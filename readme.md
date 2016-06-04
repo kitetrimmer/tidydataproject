@@ -1,6 +1,23 @@
 # Getting and Reading Data Course Project
 Submitted on June 4, 2016 using data downloaded on June 2,2016
 
+## How to run run_analysis script
+
+### Dependencies
+The following packages must be installed prior to running:
+ * plyr
+ * dplyr
+ * reshape2
+
+### Instructions
+
+To run the script:
+
+1. Load the script into R studio
+2. Source the script
+3  Call run_analysis, using the directory containing the data as the dir arguement
+4. Results will be in the directory passed as the arguement
+ 
 ## Manifest
 
 ## Tidy Data
