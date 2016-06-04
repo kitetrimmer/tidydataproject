@@ -157,8 +157,8 @@ run_analysis <- function (dir) {
         
         print("writing files (22/22)")
         setwd(dir)
-        write.csv(data,file="dataset1.csv")
-        write.csv(data52,file="dataset2.csv")
+        write.table(data,file="dataset1.txt",row.names = FALSE)
+        write.table(data52,file="dataset2.txt",row.names = FALSE)
         setwd(oldwd)
         print("DONE!")
 }
