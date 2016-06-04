@@ -1,0 +1,17 @@
+Dataset 2
+==========
+
+This is a tidy dataset that meets the last requirement as described in the TidyDataOverview.txt.
+
+Here are the steps used to create the dataset:
+	1. select only the relevent columns from dataset1 (subject,calculation,readingtype,activitydescription,value)
+	2. apply the "ddply" functin in R to create a mean value for each combination of subject,calculation,readingtype,
+	   and activitydescription 
+
+There are 5 columns in the dataset described below:
+	1. subject = the number of the test subject that performed the activity
+	2. calculation = calculation = (mean / std) - what calculation the value represents
+	3. readingtype = the type of reading (see features_info.txt for more information)
+	4. activitydescription (valid values are in activity_description.txt) - a description of the activity that occurred
+	5. average = the average for the combination of subject, calculation, readingtype, and activitydescription
+	

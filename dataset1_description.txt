@@ -1,0 +1,40 @@
+Dataset 1
+==========
+
+This is a tidy dataset that meets the first 4 requirements as described in the TidyDataOverview.txt.
+
+Here are the steps used to create the dataset: 
+
+	1.The subjects (from subject_test.txt and subject_train.txt) and activities (from y_test.txt and 
+	  ytrain.txt) were joined to their respective reading tables (x_test and x_train).
+
+	2. The features.txt was used to name the columns of the data from x_test and x_train.
+
+	3. The columns that contained "mean()" and "std()" in the variable name were selected
+
+	4. The data was "melted" into data frames containing the activity, the subject, the variable, and the value.
+
+	5. The source of the data was added to the melted tables (train or test)
+
+	6. The two datasets were merged together to make one consolidated dataset
+
+	7. The variable was split into 4 variables, dimension, calculation, domain, and reading type
+
+	8. An ActivityDescription column was created by merging the activity_description.txt based on the activity column
+
+	9. Unneccessary columns were removed from the dataset (activity, variable)
+
+	10. Data values were cleaned up by:
+	a. removing the parenthesis '()' from the calculationtype
+	b. changing the signaltype from "t" to "time" and "f" to "frequency"
+
+There are 8 columns in the dataset described below:
+
+	1. subject = the number of the test subject that performed the activity
+	2. value = the value recorded on the accelerometer
+	3. source = test / train - which file the data was recorded in
+	4. diimension = (x /y/ z ) - what dimension the recording applies to 
+	5. calculation = (mean / std) - what calculation the value represents
+	6. domain = (time / frequency) - what domain the recording is (see features_info.txt for more information)
+    7. readingtype = the type of reading (see features_info.txt for more information)
+	8. activitydescription (valid values are in activity_description.txt) - a description of the activity that occurred
