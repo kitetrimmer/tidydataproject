@@ -18,7 +18,41 @@ To run the script:
 3.  Call run_analysis, using the directory containing the data as the dir argument
 4. Results will be in the directory passed as the argument
  
-## Manifest
+### Process followed
+This is a duplicate of some information that is contained in other files  
+I didn't realize I needed it here until I started reviewing other projects.
+
+Here are the steps used to create the first dataset: 
+
+	1.The subjects (from subject_test.txt and subject_train.txt) and activities (from y_test.txt and 
+	  ytrain.txt) were joined to their respective reading tables (x_test and x_train).
+
+	2. The features.txt was used to name the columns of the data from x_test and x_train.
+
+	3. The columns that contained "mean()" and "std()" in the variable name were selected
+
+	4. The data was "melted" into data frames containing the activity, the subject, the variable, and the value.
+
+	5. The source of the data was added to the melted tables (train or test)
+
+	6. The two datasets were merged together to make one consolidated dataset
+
+	7. The variable was split into 4 variables, dimension, calculation, domain, and reading type
+
+	8. An ActivityDescription column was created by merging the activity_description.txt based on the activity column
+
+	9. Unneccessary columns were removed from the dataset (activity, variable)
+
+	10. Data values were cleaned up by:
+		a. removing the parenthesis '()' from the calculationtype
+		b. changing the signaltype from "t" to "time" and "f" to "frequency"
+
+ Here are the steps to create the second dataset:
+	1. select only the relevent columns from dataset1 (subject,calculation,readingtype,activitydescription,value)
+	2. apply the "ddply" functin in R to create a mean value for each combination of subject,calculation,readingtype,
+	   and activitydescription  
+ 
+ ## Manifest
 
 ## Tidy Data
 
