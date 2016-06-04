@@ -52,9 +52,9 @@ Here are the steps used to create the first dataset:
 	2. apply the "ddply" functin in R to create a mean value for each combination of subject,calculation,readingtype,
 	   and activitydescription  
  
- ## Manifest
+## Manifest
 
-## Tidy Data
+### Tidy Data
 
 * Readme.md - this file
 * TidyDataOverview.txt - an overview of the data tidying project, and a description of the run_analysis script
@@ -64,9 +64,9 @@ Here are the steps used to create the first dataset:
 * dataset2.csv - the second tidied dataset
 * tidyDataProject.R - the R script used to generate the two datasets
 
-## Original Data
+### Original Data
 
-### In subdirectory UCI HAR Dataset:
+#### In subdirectory UCI HAR Dataset:
 
 * README.txt - data and experiment description
 * features_info.txt - a description of the data collected
